@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<!--
+  =====================================================================
+  Living Weather v0.1.0 - OPTIONAL Stormy preset
+  Target: Data/Config/biomes.xml, biome "pine_forest" ONLY.
+  Install INSTEAD OF the "LivingWeather" atmospheric modlet, never
+  together with it (if both exist, the alphabetically-last loader
+  wins - this one - but that configuration is unsupported).
+
+  Verified against the public 3.4.0 Biomes.xml/Raw_file reference.
+  Vanilla (3.4.0) -> Stormy values (groups are normalized to 100):
+
+      default   83 -> 40
+      fog        7 ->  4
+      rainlight  6 -> 24
+      rainheavy  4 -> 16
+      storm      0 -> 16
+      (stormbuild, bloodMoon, twitch_* stay 0)
+  =====================================================================
+-->
+  <set xpath="//biome[@name='pine_forest']/weather[@name='default']/@prob">40</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='fog']/@prob">4</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='rainlight']/@prob">24</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='rainheavy']/@prob">16</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='storm']/@prob">16</set>
+</configs>
