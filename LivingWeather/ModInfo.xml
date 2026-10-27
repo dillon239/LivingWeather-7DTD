@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="LivingWeather"/>
+  <DisplayName value="Living Weather"/>
+  <Version value="0.1.0"/>
+  <Description value="Tuned weather for the forest biome: more frequent and longer rain and storms, while keeping plenty of clear weather. XML patch modlet only - no game files are modified, no new assets, no C#. Remove the folder to undo."/>
+  <Author value="LivingWeather"/>
+  <Website value="https://www.nexusmods.com/7daystodie/mods/"/>
+</xml>

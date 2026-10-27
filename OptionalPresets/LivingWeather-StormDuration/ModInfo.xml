@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="LivingWeather-StormDuration"/>
+  <DisplayName value="Living Weather - Longer Forest Storms (Experimental)"/>
+  <Version value="0.1.0"/>
+  <Description value="EXPERIMENTAL optional addon for Living Weather: extends the duration of rain and storm weather in the forest biome IF your installed game version's biomes.xml supports the duration attribute on weather entries (V2.0 dynamic-storm era). Run the bundled validator against a copy of your vanilla biomes.xml first: it prints whether this addon can apply. XML patch modlet only; remove the folder to undo."/>
+  <Author value="LivingWeather"/>
+  <Website value="https://www.nexusmods.com/7daystodie/mods/"/>
+</xml>

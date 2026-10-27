@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="LivingWeather-Stormy"/>
+  <DisplayName value="Living Weather - Stormy Preset"/>
+  <Version value="0.1.0"/>
+  <Description value="Optional stronger preset for Living Weather: heavy rain and storm weather in the forest biome (40% default, 4% fog, 32% rain, 24% storm). XML patch modlet only. Install INSTEAD OF (not together with) the default Living Weather preset. Remove the folder to undo."/>
+  <Author value="LivingWeather"/>
+  <Website value="https://www.nexusmods.com/7daystodie/mods/"/>
+</xml>
