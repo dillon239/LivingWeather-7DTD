@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<!--
+  =====================================================================
+  Living Weather v0.1.0 - Atmospheric preset
+  Target: Data/Config/biomes.xml, biome "pine_forest" ONLY.
+  Schema verified against the public Biomes.xml/Raw_file reference
+  marked "Current. Verified for version 3.4.0" on the 7D2D Modding
+  Wiki (7d2dmodding.wiki.gg/wiki/Biomes.xml/Raw_file).
+
+  WHY "pine_forest"
+  The 1.0-era biome name "forest" no longer exists in the current
+  schema: the game's biomemap lists biome ids for snow, pine_forest,
+  desert, water, radiated, wasteland, burnt_forest, caveFloor,
+  caveCeiling and underwater. The forest of earlier versions is the
+  pine_forest biome in current builds (the official wiki also
+  associates thunderstorms with Pine Forest). All other biomes are
+  deliberately untouched.
+
+  WHAT THIS CHANGES
+  Only the `prob` attributes of five named weather groups. The file
+  header documents the mechanics: each group has "a probability for
+  how often that group is chosen when weather decides to change";
+  probabilities are normalized within the biome's groups. Group
+  probabilities below are set to a total of exactly 100 (the scale
+  itself is free: ".3 vs .7, 3 vs 7 or 30 vs 70"):
+
+      name       vanilla 3.4.0 -> Atmospheric
+      default     83 -> 60
+      fog          7 ->  5
+      rainlight    6 -> 20
+      rainheavy    4 -> 10
+      storm        0 ->  5
+      (stormbuild, bloodMoon and twitch_* stay at 0)
+
+  Clear-weather balance: 65% of rotation weight remains non-precipitating.
+
+  STORM SCHEDULING NOTE (tested in-game: pending)
+  In vanilla the storm group carries prob="0": dynamic storms (the
+  global Storm Frequency option, 0-500%) schedule storms rather than
+  the biome rotation. Setting storm prob > 0 makes the storm group
+  weight-selectable in pine_forest's own rotation - the only XML-only
+  biome-local storm-frequency lever in the verified schema. The exact
+  in-game interaction between rotation-selected storms and dynamically
+  scheduled storms is not yet observed; if it feels excessive, simply
+  set storm back to 0 (see README) or use the Stormy preset values
+  instead. This is documented as an interpretation risk, not a
+  verified behavior.
+
+  NOTHING ELSE is touched: no temperature, cloud, precipitation, fog or
+  wind condition values, no spectrums, no ParticleEffect, no duration
+  (see the separate experimental addon), no other biome, no
+  zombie/loot/crafting configs.
+
+  WHY THE // PREFIX
+  `//biome[...]` searches for the biome node at any depth instead of
+  hardcoding the file's root element name (which has changed across
+  eras). The file name (Config/biomes.xml) already scopes the patch to
+  biomes.xml. Verified: the 3.4.0 root is <worldgeneration><biomes>.
+
+  COMPATIBILITY
+  Any other mod that changes biome weather probabilities (full weather
+  overhauls, full-file biomes.xml replacements) can conflict; whichever
+  modlet loads last (alphabetically) wins. Remove this folder to fully
+  restore vanilla.
+  =====================================================================
+-->
+  <set xpath="//biome[@name='pine_forest']/weather[@name='default']/@prob">60</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='fog']/@prob">5</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='rainlight']/@prob">20</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='rainheavy']/@prob">10</set>
+  <set xpath="//biome[@name='pine_forest']/weather[@name='storm']/@prob">5</set>
+</configs>
