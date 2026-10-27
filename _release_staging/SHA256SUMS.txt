@@ -1,5 +1,3 @@
-87f2572ad6e0ce2a9b0a4aa5dcd7ea3122f5cbdac43d453fc113625f77529b28  LivingWeather-v0.1.0.zip (5355 bytes)
-837606b06213f30fc37afa5508f6bc5cc23b35fa128cbcfeb121bfa84b031311  LivingWeather-Stormy-v0.1.0.zip (4320 bytes)
-66828c733211a892a2cd9da02343a04e7501d5ddb21ac790745eb6ae98de8e56  LivingWeather-StormDuration-v0.1.0.zip (4714 bytes)
-
-Presented to the public release: LivingWeather-v0.1.0.zip with identical gameplay XML to the frozen build.
+07fab1f016d1f584da372ad6f83d483c14e6ea6e22650cd073f337604e79d5dc  LivingWeather-v0.1.0.zip (5355 bytes)
+bfe0e6ea64d9c51cd58d79ed095cfd9c6c70bc3733fc8010cbb0062bca123afa  LivingWeather-Stormy-v0.1.0.zip (4320 bytes)
+dea207f15ea7900a2330ac9a979d07b8bd5c4a43bca84d3f479c202818fda060  LivingWeather-StormDuration-v0.1.0.zip (4714 bytes)
