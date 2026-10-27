@@ -1,0 +1,3 @@
+87f2572ad6e0ce2a9b0a4aa5dcd7ea3122f5cbdac43d453fc113625f77529b28  LivingWeather-v0.1.0.zip (5355 bytes)
+837606b06213f30fc37afa5508f6bc5cc23b35fa128cbcfeb121bfa84b031311  LivingWeather-Stormy-v0.1.0.zip (4320 bytes)
+66828c733211a892a2cd9da02343a04e7501d5ddb21ac790745eb6ae98de8e56  LivingWeather-StormDuration-v0.1.0.zip (4714 bytes)
