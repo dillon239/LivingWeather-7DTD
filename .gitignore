@@ -1,0 +1,4 @@
+# TFP-copyrighted reference/test copies - local testing only, never shipped
+tests/vanilla/biomes.xml
+tests/vanilla/*.txt
+dist/
